@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 
 class SizeSetting extends Component {
-    changeSize(value) {
-        this.props.onChangeSize(value);
-    }
+    changeSize = (value) => this.props.onChangeSize(value)
     render() {
         return (
             <div className="panel panel-warning">

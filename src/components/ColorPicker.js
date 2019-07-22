@@ -1,20 +1,5 @@
 import React, { Component } from 'react';
 
-// import React from 'react';
-// function ColorPicker() {
-//     return (
-//         <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-//             <div className="panel panel-warning">
-//                 <div className="panel-heading">
-//                     <div className="panel-title">Color Picker</div>
-//                 </div>
-//                 <div className="panel-body">
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
 class ColorPicker extends Component {
 
     constructor(props) {
@@ -23,14 +8,14 @@ class ColorPicker extends Component {
             colors: ['red', 'green', 'blue', '#ccc']
         };
     }
-    showColor(color) {
+
+    showColor = (color) => {
         return {
             background: color
         }
-    }
-    setActivatorColor(color) {
-        this.props.onReceiveColor(color)
-    }
+    } 
+    setActivatorColor = (color) => this.props.onReceiveColor(color)
+
     render() {
         var elmColors = this.state.colors.map((color, index) => {
             return <span
