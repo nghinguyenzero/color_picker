@@ -28,7 +28,7 @@ class App extends Component {
       });
     }
   }
-  
+
   render() {
     return (
       <div className="container mt-50">
@@ -42,7 +42,9 @@ class App extends Component {
               fontSize={this.state.fontSize}
               onChangeSize={this.onChangeSize}
             />
-            <Reset onSettingDefault={this.onSettingDefault} />
+            <Reset
+              onSettingDefault={this.onSettingDefault}
+            />
           </div>
           <Result
             color={this.state.color}

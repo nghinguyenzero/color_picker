@@ -36,7 +36,6 @@ class ColorPicker extends Component {
                         {elmColors}
                         <hr />
                     </div>
-
                 </div>
             </div>
         );
